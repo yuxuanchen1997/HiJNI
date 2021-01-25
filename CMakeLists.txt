@@ -2,8 +2,6 @@ cmake_minimum_required(VERSION 3.16)
 
 set(CMAKE_CXX_STANDARD 17)
 
-set(LLVM_BIN $ENV{HOME}/.llvm/bin/)
-
 if (NOT DEFINED LLVM_BIN)
   message(FATAL_ERROR "Please set \"-DLLVM_BIN=/some/path\" with clang, llvm-link, llvm-dis etc")
 endif()

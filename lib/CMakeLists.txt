@@ -49,6 +49,7 @@ function(generate_bitcode target)
 endfunction()
 
 add_subdirectory(PersonJNI)
+add_subdirectory(AnimalJNI)
 add_subdirectory(HiJNINative)
 
 
@@ -75,4 +76,4 @@ function(generate_linked_bitcode)
   add_custom_target(bitcode ALL DEPENDS ${CMAKE_BINARY_DIR}/linked.bc ${CMAKE_BINARY_DIR}/linked.ll)
 endfunction()
 
-generate_linked_bitcode(PersonJNI HiJNINative)
+generate_linked_bitcode(PersonJNI AnimalJNI HiJNINative)
